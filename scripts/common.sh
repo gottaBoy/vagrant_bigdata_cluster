@@ -67,7 +67,7 @@ ELASTICSEARCH_VERSION=elasticsearch-6.6.0
 KIBANA_VERSION=kibana-6.6.0
 REDIS_VERSION=redis-5.0.12
 CANAL_VERSION=canal.deployer-1.1.5
-MAXWELL_VERSION=maxwell-1.25.0
+MAXWELL_VERSION=maxwell-1.29.2
 AZKABAN_VERSION=azkaban-3.84.4
 PRESTO_VERSION=presto-server-0.196
 KYLIN_VERSION=apache-kylin-3.0.2
@@ -285,7 +285,7 @@ CANAL_CONF_DIR=$INSTALL_PATH/canal/conf
 # https://github.com/zendesk/maxwell/releases/download/v1.25.0/maxwell-1.25.0.tar.gz
 MAXWELL_VERSION_NUM=`get_app_version_num $MAXWELL_VERSION "-" 2`
 MAXWELL_ARCHIVE=${MAXWELL_VERSION}.tar.gz
-MAXWELL_MIRROR_DOWNLOAD=https://github.com/zendesk/maxwell/releases/download/v1.25.0/maxwell-1.25.0.tar.gz
+MAXWELL_MIRROR_DOWNLOAD=https://github.com/zendesk/maxwell/releases/download/v${MAXWELL_VERSION_NUM}/${MAXWELL_ARCHIVE}
 MAXWELL_RES_DIR=$RESOURCE_PATH/maxwell
 MAXWELL_CONF_DIR=$INSTALL_PATH/maxwell
 
