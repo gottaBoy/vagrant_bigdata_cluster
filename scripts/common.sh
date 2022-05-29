@@ -55,7 +55,8 @@ SPARK_VERSION=spark-3.0.0
 FLINK_VERSION=flink-1.12.4
 SQOOP_VERSION=sqoop-1.4.7
 ZOOKEEPER_VERSION=zookeeper-3.5.7
-KAFKA_VERSION=kafka_2.11-2.4.1
+# KAFKA_VERSION=kafka_2.11-2.4.1
+KAFKA_VERSION=kafka_2.12-3.0.0
 FLUME_VERSION=flume-1.9.0
 SCALA_VERSION=scala-2.12.10
 MAVEN_VERSION=apache-maven-3.6.1
@@ -179,6 +180,7 @@ ZOOKEEPER_CONF_DIR=$INSTALL_PATH/zookeeper/conf
 # 支持版本：具体查看下载地址
 #         https://archive.apache.org/dist/kafka/0.11.0.3/kafka_2.11-0.11.0.3.tgz
 # https://mirrors.huaweicloud.com/apache/kafka/0.11.0.3/kafka_2.11-0.11.0.3.tgz
+# https://mirrors.huaweicloud.com/apache/kafka/3.0.0/kafka_2.12-3.0.0.tgz
 KAFKA_VERSION_NUM=`get_app_version_num $KAFKA_VERSION "-" 2`
 KAFKA_ARCHIVE=${KAFKA_VERSION}.tgz
 KAFKA_MIRROR_DOWNLOAD=$DOWNLOAD_REPO/kafka/$KAFKA_VERSION_NUM/$KAFKA_ARCHIVE
